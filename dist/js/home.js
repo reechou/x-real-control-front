@@ -119,7 +119,7 @@ function domainList(id) {
                 if(domainInfo.status == DOMAIN_STATUS_OK) {
                     status = "正常"
                 } else if(domainInfo.status == DOMAIN_STATUS_DOWN) {
-                    status = "被封"
+                    status = "*被封*"
                 } else {
                     status = "下线"
                 }
