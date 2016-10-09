@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>监控系统</title>
+    <link rel="stylesheet" href="./lib/weui/dist/style/weui.css"/>
+    <link rel="stylesheet" href="./css/home.css"/>
+</head>
+<body ontouchstart>
+<div class="container" id="container"></div>
+
+<script type="text/html" id="tpl_tabbar">
+
+<div class="weui_tab">
+    <div class="weui_tab_bd">
+        <div class="hd">
+            <h1 class="page_title">YouZan 监控系统</h1>
+            <p class="page_desc">为你的服务保驾护航</p>
+        </div>
+        <div class="weui_cells_title">视图选择</div>
+        <div class="weui_cells">
+            <div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    <label for="" class="weui_label">应用/app</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="1">hawk</option>
+                        <option value="2">trade</option>
+                        <option value="3">ic</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    <label for="" class="weui_label">视图/graph</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select" name="select2">
+                        <option value="1">/report 调用量</option>
+                        <option value="2">/report 平均耗时</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="weui_btn_area button_sp_area">
+            <a class="weui_btn weui_btn_mini weui_btn_primary" href="javascript:">查询视图</a>
+        </div>
+        <div id="home_graph" style="width: 100%; height: 100%; left: 'center'; top: 20"></div>
+    </div>
+    <div class="weui_tabbar">
+        <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
+            <div class="weui_tabbar_icon">
+                <img src="./lib/weui/dist/example/images/icon_nav_button.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">首页</p>
+        </a>
+        <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="./lib/weui/dist/example/images/icon_nav_article.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">报警</p>
+        </a>
+        <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="./lib/weui/dist/example/images/icon_nav_panel.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">设置</p>
+        </a>
+    </div>
+</div>
+</script>
+
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/router/dist/router.min.js"></script>
+<script src="./js/router.js"></script>
+<script src="./lib/echarts/dist/echarts.min.js"></script>
+<script src="./js/graph.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "hawk-wap-front",
+  "homepage": "https://github.com/reechou/hawk-wap-front",
+  "authors": [
+    "zhoulindong <zhoulindong@qima-inc.com>"
+  ],
+  "description": "hawk手机h5",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zepto": "^1.1.6",
+    "echarts": "^3.2.3",
+    "weui": "^0.4.3"
+  }
+}

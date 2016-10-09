@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>监控系统</title>
+    <link rel="stylesheet" href="./lib/weui/dist/style/weui.css"/>
+    <link rel="stylesheet" href="./css/home.css"/>
+</head>
+<body ontouchstart>
+
+<div class="weui_tab">
+    <div class="container" id="container"></div>
+    <script type="text/html" id="tpl_opr_home">
+    <div class="bd">
+        <div class="weui_cells_title">Monitor操作</div>
+        <div class="weui_cells weui_cells_access">
+            <a class="weui_cell" href="#/opr_graph">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>检索视图</p>
+                </div>
+                <div class="weui_cell_ft">
+                </div>
+            </a>
+            <a class="weui_cell" href="javascript:;">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>新建告警</p>
+                </div>
+                <div class="weui_cell_ft">
+                </div>
+            </a>
+        </div>
+        <div class="weui_cells_title">关于</div>
+        <div class="weui_cells">
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>Monitor</p>
+                </div>
+                <div class="weui_cell_ft">v0.0.1</div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>Dev</p>
+                </div>
+                <div class="weui_cell_ft">Youzan.PaaS</div>
+            </div>
+        </div>
+    </div>
+</script>
+
+    <script type="text/html" id="tpl_opr_graph">
+    <div class="weui_tab_bd">
+        <div class="weui_cells_title">视图选择</div>
+        <div class="weui_cells graph_select">
+            <div class="weui_cell weui_cell_select weui_select_after">
+                <div class="weui_cell_hd">
+                    <label for="" class="weui_label">应用/app</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_select app_select" name="select2" onchange="changeApp()">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="all_tag_select" class="weui_cells_title">tag选择</div>
+        <div class="weui_cells tag_select">
+        </div>
+        <div class="weui_btn_area button_sp_area" id="query_button">
+            <a class="weui_btn weui_btn_mini weui_btn_primary" onclick="queryGraph()">查询</a>
+        </div>
+    </div>
+</script>
+
+    <div class="weui_tabbar">
+    <a href="/home.html" class="weui_tabbar_item" id="tab_index">
+        <div class="weui_tabbar_icon">
+            <img src="./lib/weui/dist/example/images/icon_nav_button.png" alt="">
+        </div>
+        <p class="weui_tabbar_label">域名</p>
+    </a>
+    <a href="/content.html" class="weui_tabbar_item" id="tab_alarm">
+        <div class="weui_tabbar_icon">
+            <img src="./lib/weui/dist/example/images/icon_nav_article.png" alt="">
+        </div>
+        <p class="weui_tabbar_label">内容</p>
+    </a>
+</div>
+
+</div>
+</div>
+
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/router/dist/router.min.js"></script>
+<script src="./lib/echarts/dist/echarts.min.js"></script>
+<script src="./js/operation.js"></script>
+</body>
+
+</html>

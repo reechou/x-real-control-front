@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    line-height: 1.2;
+    overflow-x: hidden;
+    background-color: #FBF9FE;
+}
+
+.container {
+    height:100%;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch
+}
+
+.container>div {
+    background-color:#fbf9fe
+}
+
+.hd {
+    padding: 8px 0
+}
+
+.page_title {
+    text-align: center;
+    font-size: 32px;
+    color: #3CC51F;
+    font-weight: 400;
+    margin: 0 15%;
+}
+
+.page_desc {
+    text-align: center;
+    color: #888;
+    font-size: 15px;
+}
+
+.tabbar {
+    height: 100%;
+}
+
+.button_sp_area {
+    margin: 0.5em 15px 0.1em;
+}
+
+.button_sp_area:after {
+    display: inline-block;
+    height: 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    content: ".";
+}

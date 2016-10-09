@@ -1,0 +1,52 @@
+<script type="text/html" id="tpl_add_content">
+    <div class="weui_tab_bd">
+        <div class="weui_cells_title domain_list_name">增加视频内容</div>
+            <div class="weui_cells weui_cells_form">
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label class="weui_label">内容</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" id="content_detail" placeholder="请输入内容"/>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label class="weui_label">标题</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" id="content_title" placeholder="请输入标题"/>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label class="weui_label">视频源</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" id="content_video_src" placeholder="请输入视频源"/>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label class="weui_label">图像url</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" id="content_img_url" placeholder="请输入图像url"/>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label class="weui_label">标题图像url</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" id="content_title_img_url" placeholder="请输入图像url"/>
+                    </div>
+                </div>
+                <div class="weui_cell weui_cell_select weui_select_after">
+                    <div class="weui_cell_hd">
+                        <label for="" class="weui_label">类型</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <select class="weui_select" name="select2" id="content_show_type">
+                            <option value="0">正常内容</option>
+                            <option value="1">广告</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="button_sp_area">
+                <a onclick="addContent()" class="weui_btn weui_btn_mini weui_btn_primary" id="add_content_info">创建</a>
+            </div>
+        </div>
+    </div>
+</script>
