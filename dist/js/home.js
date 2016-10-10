@@ -208,6 +208,16 @@ function getGroupStatus() {
                 if(res.data.adsStatus != 0) {
                     $("#if_show_ads").prop("checked", true);
                 }
+                var typeStr = "域名展现组";
+                if(res.data.type == 1) {
+                    typeStr = "域名跳转组";
+                }
+                $('.group_type').html(typeStr)
+                if(res.data.showGroupListStr != "") {
+                    $('.next_group_list').html(res.data.showGroupListStr)
+                } else {
+                    $('.next_group_list').html("无")
+                }
             } else {
                 alert("拉取域名组状态失败：" + res.msg);
             }
