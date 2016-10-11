@@ -1,6 +1,6 @@
 let config = {
     env: 'dev',
-    proxy: 'http://weixinapi.paili5.com:8818/'
+    proxy: 'http://121.41.10.93:8818/'
 };
 
 module.exports = config;
